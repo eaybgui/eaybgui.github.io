@@ -5,37 +5,42 @@ body {
 
 header {
     padding: 10px;
-}
-
-nav {
     background-color: #f1f1f1;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list {
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0 0.5rem 0;
     display: flex;
 }
 
-nav ul li {
-    flex: 1;
-    text-align: center;
+.navigation-list-item {
+    margin-right: 1rem;
 }
 
-nav ul li a {
-    padding: 5px 10px;
+.navigation-link {
     text-decoration: none;
     color: #333;
-    display: block;
+}
+
+.cv-button {
+    margin-left: 1rem;
+    margin-right: 2rem;
 }
 
 nav ul li a:hover {
     background-color: #ddd;
 }
 
-section {
-    padding: 50px;
+.navbar-item {
+    padding: 3rem;
 }
 
 h2 {
