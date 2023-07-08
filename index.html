@@ -2,30 +2,35 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <nav>
+        <ul class="navigation-list">
+            <li class="navigation-list-item"><a class="navigation-link" href="#seccion1">Sección 1</a></li>
+            <li class="navigation-list-item"><a class="navigation-link" href="#seccion2">Sección 2</a></li>
+            <li class="navigation-list-item"><a class="navigation-link" href="#seccion3">Sección 3</a></li>
+        </ul>
+        <ul class="navigation-list">
+            <li class="cv-button shadow"><a class="navigation-link">Descarga mi CV!</a></li>
+            <li class="cv-button shadow"><a class="navigation-link">Contacto</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul class="navigation-list">
-                <li class="navigation-list-item"><a class="navigation-link" href="#seccion1">Sección 1</a></li>
-                <li class="navigation-list-item"><a class="navigation-link" href="#seccion2">Sección 2</a></li>
-                <li class="navigation-list-item"><a class="navigation-link" href="#seccion3">Sección 3</a></li>
-            </ul>
-            <ul class="navigation-list">
-                <li class="cv-button"><a class="navigation-link">CV</a></li>
-                <li class="cv-button"><a class="navigation-link">Contacto</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h1>Saludo</h1>
-            <p>Presentacion</p>
+        <section class="presentation">
+            <div class="title-container">
+                <h1>Hola, soy Elies!</h1>
+                <h4>Soy un estudiante ingeniería informática en la UPV. Me gusta mucho el desarrollo web y de software. Ahora busco mis primeras prácticas para adentrarme en el mundo laboral y poner en práctica lo que he aprendido, échale un ojo a esta web
+                    para conocerme más!</h4>
+            </div>
+            <img src="PP.jpg" class="profile-p shadow">
         </section>
     </header>
-
-
 
     <main>
         <section class="navbar-item" id="seccion1">
