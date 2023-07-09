@@ -53,12 +53,44 @@ nav {
     text-decoration: underline;
 }
 
-.navbar-item {
-    padding: 13rem;
+.main-section {
+    padding: 3rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-h2 {
-    margin-top: 0;
+.main-section p {
+    max-width: 75%;
+}
+
+.section1-content {
+    padding: 2rem;
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section1-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.tech-img {
+    max-height: 6rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.tech {
+    margin-bottom: 1rem;
 }
 
 .presentation {
