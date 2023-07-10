@@ -24,6 +24,44 @@ nav {
     z-index: 100;
 }
 
+footer {
+    background-color: #364552;
+    color: white;
+    padding: 1rem 1rem 1rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer div h1 {
+    max-width: 35%;
+}
+
+.contact-container {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-container:hover {
+    cursor: pointer;
+}
+
+.contact-text {
+    margin: auto 0;
+}
+
+.icon-container {
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
 .navigation-list {
     list-style-type: none;
     margin: 0;
@@ -37,16 +75,32 @@ nav {
 }
 
 .navigation-link {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+}
+
+.button-link {
+    color: white;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    text-decoration: none;
 }
 
 .cv-button {
     margin-left: 1rem;
     margin-right: 2rem;
     background-color: rgb(60, 60, 165);
+    border: rgb(43, 43, 120) solid 3px;
     border-radius: 5%;
     padding: 0.4rem;
+    color: white;
+}
+
+.cv-button:hover {
+    /* box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1); */
+    box-shadow: 0 0.1rem 0.4rem rgb(104, 78, 171);
 }
 
 .navigation-link:hover {
@@ -54,7 +108,7 @@ nav {
 }
 
 .main-section {
-    padding: 3rem 0 1rem 0;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +136,25 @@ nav {
     align-items: center;
     border-radius: 5%;
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.section2-item {
+    width: 650px;
+    display: flex;
+    border-radius: 1%;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+
+.project-text-container {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    max-height: 14rem;
+    margin-right: 1rem;
 }
 
 .tech-img {
