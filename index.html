@@ -15,12 +15,12 @@
             <li class="navigation-list-item"><a class="navigation-link" href="#seccion1">Tecnologías</a></li>
             <li class="navigation-list-item"><a class="navigation-link" href="#seccion2">Proyectos</a></li>
             <li class="navigation-list-item"><a class="navigation-link" href="#seccion3">Certificaciones</a></li>
-            <li class="navigation-list-item"><a class="navigation-link" href="#seccion3">Soft skills?</a></li>
+            <!-- <li class="navigation-list-item"><a class="navigation-link" href="#seccion3">Soft skills?</a></li> -->
         </ul>
         <ul class="navigation-list">
             <li class="cv-button"><a class="button-link"
                     onclick="window.open('assets/pdf/CV-Elies.pdf', '_blank').focus();">Descarga mi CV!</a></li>
-            <li class="cv-button"><a class="button-link">Contacto</a></li>
+            <li class="cv-button"><a class="button-link" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <header>
@@ -30,7 +30,7 @@
                 <h4>Soy un estudiante ingeniería informática en la UPV. Me gusta mucho el desarrollo web y de software,
                     aunque aun estoy explorando campos para averiguar a que me quiero dedicar. Ahora busco mis primeras
                     prácticas para adentrarme en el mundo
-                    laboral y llevar a la realidad/cabo lo que he aprendido, échale un ojo a esta web para conocerme
+                    laboral y llevar a la realidad lo que he aprendido, échale un ojo a esta web para conocerme
                     más!</h4>
             </div>
             <img src="assets/img/PP.jpg" class="profile-p shadow">
@@ -96,21 +96,32 @@
                 mucho más este apartado!</p>
             <div class="section1-content" style="max-width: 80%;">
                 <div class="section2-item">
-                    <img class="project-img" src="assets/img/mergeSort.png">
+                    <div>
+                        <img class="project-img" src="assets/img/mergeSort.png">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <img width="30px" src="assets/img/logo-javascript.svg">
+                            <img width="30px" src="assets/img/logo-css.svg">
+                            <img width="30px" src="assets/img/logo-html.svg">
+                            <img width="30px" src="assets/img/logo-github.svg">
+                            <a href="https://github.com/eaybgui/MergeSort-visualization" class="navigation-link"
+                                style="color: black;">Enlace
+                                a github</a>
+                        </div>
+                    </div>
                     <div class="project-text-container">
-                        <h4 style="margin: 0;">Visualizacion del algoritmo merge sort</h4>
+                        <h4 style="margin: 0 0 1rem 0;">Visualizacion del algoritmo merge sort</h4>
                         Este fue mi primer proyecto de aplicación web. Es una visualizacion sencilla del funcionamiento
                         del algoritmo Merge Sort.
                     </div>
                 </div>
-                <div class="section2-item">
+                <!-- <div class="section2-item">
                     <img class="project-img" src="assets/img/mergeSort.png">
                     <div class="project-text-container">
                         <h3 style="margin: 0; ">Visualizacion del algoritmo Merge Sort</h3>
                         Este fue mi primer proyecto de aplicación web. Es una visualizacion sencilla del funcionamiento
                         del algoritmo Merge Sort.
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -139,7 +150,7 @@
     </main>
     <footer>
         <!--  -->
-        <div>
+        <div id="contacto">
             <h1>Contacta conmigo!</h1>
         </div>
         <div style="display: flex;flex-wrap: wrap;">
