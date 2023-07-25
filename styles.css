@@ -1,5 +1,10 @@
 html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
 }
 
 body {
@@ -62,6 +67,11 @@ footer div h1 {
     margin-left: 2rem;
 }
 
+.icon-container:hover {
+    background-color: rgb(60, 60, 165);
+    box-shadow: 0 0.1rem 0.4rem rgb(11, 9, 12);
+}
+
 .navigation-list {
     list-style-type: none;
     margin: 0;
@@ -115,9 +125,9 @@ footer div h1 {
     text-align: center;
 }
 
-.main-section p {
+/* .main-section p {
     max-width: 75%;
-}
+} */
 
 .section1-content {
     padding: 2rem;
@@ -154,6 +164,7 @@ footer div h1 {
 
 .project-img {
     max-height: 14rem;
+    width: 25rem;
     margin-right: 1rem;
 }
 
@@ -188,4 +199,8 @@ footer div h1 {
 
 .shadow {
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+}
+
+.mw-75 {
+    max-width: 75%;
 }
