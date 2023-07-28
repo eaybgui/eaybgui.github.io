@@ -71,6 +71,7 @@ footer div h1 {
 .icon-container:hover {
     background-color: rgb(60, 60, 165);
     box-shadow: 0 0.1rem 0.4rem rgb(11, 9, 12);
+    transition: background-color .3s ease;
 }
 
 .navigation-list {
@@ -111,11 +112,57 @@ footer div h1 {
 
 .cv-button:hover {
     /* box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1); */
-    box-shadow: 0 0.1rem 0.4rem rgb(104, 78, 171);
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem rgb(106, 106, 106);
+    transition: box-shadow .3s ease;
 }
 
 .navigation-link:hover {
     text-decoration: underline;
+}
+
+.emphasis {
+    color: rgb(97, 97, 250);
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.typewriter span {
+    animation: typing 1s steps(1, end) forwards;
+    opacity: 0;
+}
+
+.typewriter .cursor {
+    animation: cursorBlink 1s forwards;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    100% {
+        display: none;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: auto;
+        opacity: 1;
+    }
+}
+
+section h1 {
+    color: rgb(97, 97, 250);
+    text-decoration: underline;
+    width: auto;
 }
 
 .main-section {
@@ -189,6 +236,11 @@ footer div h1 {
 .title-container {
     width: 25rem;
     text-align: center;
+}
+
+.title-container h1 {
+    color: white;
+    text-decoration: none;
 }
 
 .profile-p {

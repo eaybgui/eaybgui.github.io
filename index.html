@@ -26,10 +26,16 @@
     <header>
         <section class="presentation">
             <div class="title-container">
-                <h1>Hola, soy Elies!</h1>
-                <h4>Soy un estudiante ingeniería informática en la UPV. Me gusta mucho el desarrollo web y de software,
-                    aunque aun estoy explorando campos para averiguar a que me quiero dedicar. Ahora busco mis primeras
-                    prácticas para adentrarme en el mundo
+                <h1 class="typewriter">
+                    <!-- Hola, soy Elies<span class="emphasis" style="text-decoration: none;">!</span> -->
+                </h1>
+                <h4>Soy un estudiante <span class="emphasis">ingeniería informática en la UPV.</span> Me gusta mucho el
+                    desarrollo web y
+                    de software,
+                    aunque aun estoy explorando campos para averiguar a que me quiero dedicar. Ahora <span
+                        class="emphasis">busco mis
+                        primeras
+                        prácticas</span> para adentrarme en el mundo
                     laboral y llevar a la realidad lo que he aprendido, échale un ojo a esta web para conocerme
                     más!</h4>
             </div>
@@ -197,6 +203,20 @@
         function mail() {
             window.location.href = "mailto:eaybgui@gmail.com"
         }
+
+        const text = "Hola, soy Elies!"; // El texto que deseas animar
+        const typewriter = document.querySelector(".typewriter");
+
+        text.split("").forEach((char, index) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.style.animationDelay = `${index * 0.2}s`;
+            if (index == text.length - 1) {
+                span.classList.add("emphasis")
+                span.style.textDecoration = "none"
+            }
+            typewriter.appendChild(span);
+        });
     </script>
 </body>
 
