@@ -27,7 +27,8 @@ nav {
     padding: 1rem;
     top: 0;
     z-index: 100;
-    height: 4rem;
+    height: 3.5rem;
+    box-shadow: 0 0.1rem 0.4rem #364552;
 }
 
 footer {
@@ -132,22 +133,6 @@ footer div h1 {
     opacity: 0;
 }
 
-.typewriter .cursor {
-    animation: cursorBlink 1s forwards;
-}
-
-@keyframes cursorBlink {
-
-    0%,
-    100% {
-        display: none;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
 @keyframes typing {
     from {
         width: 0;
@@ -162,7 +147,7 @@ footer div h1 {
 section h1 {
     color: rgb(97, 97, 250);
     text-decoration: underline;
-    width: auto;
+    width: 100%;
 }
 
 .main-section {
@@ -241,13 +226,13 @@ section h1 {
 .title-container h1 {
     color: white;
     text-decoration: none;
+    margin-top: 0;
 }
 
 .profile-p {
     margin: 0 0 1rem 2.5rem;
     border-radius: 50%;
-    max-width: 250px;
-    min-width: 150px;
+    width: 15rem;
     height: auto;
 }
 
