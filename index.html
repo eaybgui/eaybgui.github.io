@@ -54,43 +54,43 @@
                 rápido me puedo adaptar cuando se requiera.</p>
             <div class="section1-content">
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-javascript.svg">
+                    <img class="tech-img animated" src="assets/img/logo-javascript.svg">
                     <p class="tech">Javascript</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-css.svg">
+                    <img class="tech-img animated" src="assets/img/logo-css.svg">
                     <p class="tech">CSS</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-html.svg">
+                    <img class="tech-img animated" src="assets/img/logo-html.svg">
                     <p class="tech">HTML</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-react.svg">
+                    <img class="tech-img animated" src="assets/img/logo-react.svg">
                     <p class="tech">React</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-node.svg">
+                    <img class="tech-img animated" src="assets/img/logo-node.svg">
                     <p class="tech">Node.js</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-database.svg">
+                    <img class="tech-img animated" src="assets/img/logo-database.svg">
                     <p class="tech">BBDD</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-python.svg">
+                    <img class="tech-img animated" src="assets/img/logo-python.svg">
                     <p class="tech">Python</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-java.svg">
+                    <img class="tech-img animated" src="assets/img/logo-java.svg">
                     <p class="tech">Java</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-flutter.svg">
+                    <img class="tech-img animated" src="assets/img/logo-flutter.svg">
                     <p class="tech">Flutter</p>
                 </div>
                 <div class="section1-item">
-                    <img class="tech-img" src="assets/img/logo-git.svg">
+                    <img class="tech-img animated" src="assets/img/logo-git.svg">
                     <p class="tech">Git</p>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                 realizados en la carrera y todos han sido realizados únicamente por mi. Sigo trabajando para ampliar
                 mucho más este apartado!</p>
             <div class="section1-content" style="max-width: 80%;">
-                <div class="section2-item">
+                <div class="section2-item animated">
                     <div>
                         <img class="project-img" src="assets/img/mergeSort.png">
                         <div style="display: flex; gap: 1rem; align-items: center;">
@@ -117,9 +117,13 @@
                         </div>
                     </div>
                     <div class="project-text-container">
-                        <h4 style="margin: 0 0 1rem 0; text-align: center;">Visualizacion del algoritmo merge sort</h4>
-                        Este fue mi primer proyecto de aplicación web. Es una visualizacion sencilla del funcionamiento
-                        del algoritmo Merge Sort.
+                        <h5 style="margin: 0; text-align: center;">Visualizacion del algoritmo merge sort</h5>
+                        <p style="font-size: 1.1rem;">
+                            Este fue mi primer proyecto de aplicación web. Es una visualización sencilla del
+                            funcionamiento
+                            del algoritmo Merge Sort.
+                        </p>
+
                     </div>
                 </div>
                 <!-- <div class="section2-item">
@@ -219,6 +223,29 @@
             }
             typewriter.appendChild(span);
         });
+
+        const animate = (hmtlClass) => {
+            const elements = document.querySelectorAll(hmtlClass);
+
+            function activateAnimation(element) {
+                element.classList.add("active");
+            }
+
+            window.addEventListener("scroll", () => {
+                const windowHeight = window.innerHeight;
+                let count = 0
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    if (elementPosition < windowHeight * 0.8) {
+                        activateAnimation(element);
+                        element.style.animationDelay = `${count}s`;
+                        count += 0.3
+                    }
+                });
+            });
+        }
+        animate(".tech-img")
+        animate(".section2-item")
     </script>
 </body>
 

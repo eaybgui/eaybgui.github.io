@@ -1,15 +1,12 @@
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
-
-p {
-    font-size: 1.2rem;
-}
-
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5em + 0.5vw);
     margin: 0;
     padding: 0;
+}
+
+h5 {
+    font-size: 1.3rem;
 }
 
 header {
@@ -112,7 +109,6 @@ footer div h1 {
 }
 
 .cv-button:hover {
-    /* box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1); */
     cursor: pointer;
     box-shadow: 0 0.1rem 0.4rem rgb(106, 106, 106);
     transition: box-shadow .3s ease;
@@ -158,10 +154,6 @@ section h1 {
     text-align: center;
 }
 
-/* .main-section p {
-    max-width: 75%;
-} */
-
 .section1-content {
     padding: 2rem;
     max-width: 60%;
@@ -182,11 +174,23 @@ section h1 {
 }
 
 .section2-item {
-    width: 750px;
+    width: 800px;
     display: flex;
     border-radius: 1%;
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
     padding: 1rem;
+
+}
+
+.animated {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .project-text-container {
