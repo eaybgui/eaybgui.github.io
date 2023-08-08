@@ -53,44 +53,44 @@
                 carrera universitaria. Aunque no las domino todas por igual, creo que son las tecnologías a las que mas
                 rápido me puedo adaptar cuando se requiera.</p>
             <div class="section1-content">
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-javascript.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-javascript.svg">
                     <p class="tech">Javascript</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-css.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-css.svg">
                     <p class="tech">CSS</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-html.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-html.svg">
                     <p class="tech">HTML</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-react.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-react.svg">
                     <p class="tech">React</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-node.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-node.svg">
                     <p class="tech">Node.js</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-database.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-database.svg">
                     <p class="tech">BBDD</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-python.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-python.svg">
                     <p class="tech">Python</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-java.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-java.svg">
                     <p class="tech">Java</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-flutter.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-flutter.svg">
                     <p class="tech">Flutter</p>
                 </div>
-                <div class="section1-item">
-                    <img class="tech-img animated" src="assets/img/logo-git.svg">
+                <div class="section1-item animated">
+                    <img class="tech-img" src="assets/img/logo-git.svg">
                     <p class="tech">Git</p>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                     </li>
                     <li>
                         <p class="mw-100" style="margin: 0;">Curso Fullstack open - Universidad de Helsinki</>
-                        <p class="mw-100" style="font-size: 15px;">Curso de desarrollo web fullstack completo con
+                        <p class="mw-100" style="font-size: 0.8rem;">Curso de desarrollo web fullstack completo con
                             react, node.js y
                             mongodb</p>
                     </li>
@@ -227,24 +227,22 @@
         const animate = (hmtlClass) => {
             const elements = document.querySelectorAll(hmtlClass);
 
-            function activateAnimation(element) {
+            function activateAnimation(element, index) {
                 element.classList.add("active");
+                element.style.transitionDelay = `${index * 0.3}s`
             }
 
             window.addEventListener("scroll", () => {
                 const windowHeight = window.innerHeight;
-                let count = 0
-                elements.forEach(element => {
+                elements.forEach((element, index) => {
                     const elementPosition = element.getBoundingClientRect().top;
                     if (elementPosition < windowHeight * 0.8) {
-                        activateAnimation(element);
-                        element.style.animationDelay = `${count}s`;
-                        count += 0.3
+                        activateAnimation(element, index);
                     }
                 });
             });
         }
-        animate(".tech-img")
+        animate(".section1-item")
         animate(".section2-item")
     </script>
 </body>
