@@ -218,8 +218,41 @@ section h1 {
 .presentation {
     padding-top: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    height: 35rem;
+    flex-direction: column;
+}
+
+.first-row {
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.arrow-img {
+    display: block;
+    height: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.arrow-container {
+    display: inline-block;
+    animation: jump 1s infinite;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .title-container {
