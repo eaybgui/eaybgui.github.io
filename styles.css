@@ -10,9 +10,11 @@ h5 {
 }
 
 header {
-    padding: 10px;
+
     background-color: #364552;
     color: white;
+
+    background: url(assets/img/background.png);
 }
 
 nav {
@@ -20,12 +22,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    background-color: #364552;
     padding: 1rem;
     top: 0;
     z-index: 100;
     height: 3.5rem;
-    box-shadow: 0 0.1rem 0.4rem #364552;
+    /* box-shadow: 0 0.1rem 0.4rem #364552; */
+    background: url(assets/img/background.png);
 }
 
 footer {
@@ -34,6 +36,7 @@ footer {
     padding: 1rem 1rem 1rem 4rem;
     display: flex;
     justify-content: center;
+    background: url(assets/img/background.png);
 }
 
 footer div h1 {
@@ -223,6 +226,7 @@ section h1 {
     flex-wrap: wrap;
     height: 35rem;
     flex-direction: column;
+    /* background: url(assets/img/background.png); */
 }
 
 .first-row {
