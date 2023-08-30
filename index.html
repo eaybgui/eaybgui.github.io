@@ -49,7 +49,8 @@
     <main>
         <section class="main-section" id="seccion1">
             <h1>Tecnologías</h1>
-            <p class="mw-75">Estas son las tecnologías con las que he trabajado, bien en proyectos personales o bien
+            <p class="mw-75 subtitle">Estas son las tecnologías con las que he trabajado, bien en proyectos personales o
+                bien
                 durante la
                 carrera universitaria. Aunque no las domino todas por igual, creo que son las tecnologías a las que mas
                 rápido me puedo adaptar cuando se requiera.</p>
@@ -99,56 +100,61 @@
 
         <section class="main-section" id="seccion2">
             <h1>Proyectos</h1>
-            <p class="mw-75">Estos son algunos de los proyectos personales que he realizado. Aquí no se incluyen los
+            <p class="mw-75 subtitle">Estos son algunos de los proyectos personales que he realizado. Aquí no se
+                incluyen los
                 proyectos
                 realizados en la carrera y todos han sido realizados únicamente por mi. Sigo trabajando para ampliar
                 mucho más este apartado!</p>
             <div class="section1-content" style="max-width: 80%;">
                 <div class="section2-item animated">
-                    <div>
+                    <div style="display: flex;">
                         <img class="project-img" src="assets/img/mergeSort.png">
-                        <div style="display: flex; gap: 1rem; align-items: center;">
-                            <img width="30px" src="assets/img/logo-javascript.svg">
-                            <img width="30px" src="assets/img/logo-css.svg">
-                            <img width="30px" src="assets/img/logo-html.svg">
-                            <img width="30px" src="assets/img/logo-github.svg">
-                            <a href="https://github.com/eaybgui/MergeSort-visualization" class="navigation-link"
-                                style="color: black;">Enlace
-                                a github</a>
+                        <div class="project-text-container">
+                            <h5 style="margin: 0; text-align: center;">Visualizacion del algoritmo merge sort</h5>
+                            <p style="font-size: 1.1rem;">
+                                Este fue mi primer proyecto de aplicación web. Es una visualización sencilla del
+                                funcionamiento
+                                del algoritmo Merge Sort.
+                            </p>
                         </div>
                     </div>
-                    <div class="project-text-container">
-                        <h5 style="margin: 0; text-align: center;">Visualizacion del algoritmo merge sort</h5>
-                        <p style="font-size: 1.1rem;">
-                            Este fue mi primer proyecto de aplicación web. Es una visualización sencilla del
-                            funcionamiento
-                            del algoritmo Merge Sort.
-                        </p>
-
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 10px;">
+                        <img width="30px" src="assets/img/logo-javascript.svg">
+                        <img width="30px" src="assets/img/logo-css.svg">
+                        <img width="30px" src="assets/img/logo-html.svg">
+                        <img width="30px" src="assets/img/logo-github.svg">
+                        <a onclick="link('https://github.com/eaybgui/MergeSort-visualization')" class="navigation-link"
+                            style="color: black;">Enlace a github</a>
+                        <img width="30px" src="assets/img/logo-web.svg">
+                        <a onclick="link('https://eaybgui.github.io/MergeSort-visualization/')" class="navigation-link"
+                            style="color: black;">Enlace al sitio</a>
                     </div>
                 </div>
                 <div class="section2-item animated">
-                    <div>
+                    <div style="display: flex;">
                         <img class="project-img" src="assets/img/reactive.png">
-                        <div style="display: flex; gap: 1rem; align-items: center;">
-                            <img width="30px" src="assets/img/logo-css.svg">
-                            <img width="30px" src="assets/img/logo-html.svg">
-                            <img width="30px" src="assets/img/logo-react.svg">
-                            <img width="30px" src="assets/img/logo-node.svg">
-                            <img width="30px" src="assets/img/logo-mongo.svg">
-                            <img width="30px" src="assets/img/logo-github.svg">
-                            <a href="https://github.com/eaybgui/reactive" class="navigation-link"
-                                style="color: black;">Enlace
-                                a github</a>
+                        <div class="project-text-container">
+                            <h5 style="margin: 0; text-align: center;">Reactive</h5>
+                            <p style="font-size: 1.1rem;">
+                                Este es mi primer proyecto fullstack. Es una aplicación web de gestión de tareas. Puedes
+                                encontrar mas informacion en el archivo README de github. En este proyecto he usado
+                                varias
+                                tecnologías como react, node.js, express y mongodb.
+                            </p>
                         </div>
                     </div>
-                    <div class="project-text-container">
-                        <h5 style="margin: 0; text-align: center;">Reactive</h5>
-                        <p style="font-size: 1.1rem;">
-                            Este es mi primer proyecto fullstack. Es una aplicación web de gestión de tareas. Puedes
-                            encontrar mas informacion en el archivo README de github. En este proyecto he usado varias
-                            tecnologías como react, node.js, express y mongodb.
-                        </p>
+
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 10px;">
+                        <img width="30px" src="assets/img/logo-css.svg">
+                        <img width="30px" src="assets/img/logo-html.svg">
+                        <img width="30px" src="assets/img/logo-react.svg">
+                        <img width="30px" src="assets/img/logo-node.svg">
+                        <img width="30px" src="assets/img/logo-mongo.svg">
+                        <img width="30px" src="assets/img/logo-github.svg">
+                        <a onclick="link('https://github.com/eaybgui/reactive')" class="navigation-link"
+                            style="color: black;">Enlace
+                            a github
+                        </a>
                     </div>
                 </div>
                 <!-- <div class="section2-item">
@@ -164,7 +170,8 @@
 
         <section class="main-section" id="seccion3">
             <h1>Certificaciones</h1>
-            <p class="mw-75" style="margin: 0;">Estas son las certificaciones de los diferentes estudios extraescolares
+            <p class="mw-75 subtitle" style="margin: 0;">Estas son las certificaciones de los diferentes estudios
+                extraescolares
                 que he
                 realizado.</p>
             <div class="section1-content">

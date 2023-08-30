@@ -92,6 +92,10 @@ footer div h1 {
     text-decoration: none;
 }
 
+.navigation-link:hover {
+    cursor: pointer;
+}
+
 .button-link {
     color: white;
     text-decoration: none;
@@ -178,11 +182,15 @@ section h1 {
 
 .section2-item {
     width: 800px;
-    display: flex;
+    /* display: flex; */
     border-radius: 1%;
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
     padding: 1rem;
 
+}
+
+.subtitle {
+    text-wrap: balance;
 }
 
 .animated {
